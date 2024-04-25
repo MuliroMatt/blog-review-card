@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree";
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .card-component {
+  width: clamp(327px, 90%, 384px);
+  height: 522px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 8px 8px 0 0 hsl(0, 0%, 7%);
+  padding: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+body .card-component:hover {
+  box-shadow: 16px 16px 0 0 hsl(0, 0%, 7%);
+  transform: translate(-8px, -8px);
+}
+body .card-component:focus {
+  box-shadow: 16px 16px 0 0 hsl(0, 0%, 7%);
+  transform: translate(-8px, -8px);
+}
+body .card-component .img-container {
+  background-color: hsl(47, 88%, 63%);
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .card-component .img-container img {
+  height: 100%;
+}
+body .card-component .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 24px 0;
+  gap: 12px;
+}
+body .card-component .content .category {
+  padding: 4px 12px;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 4px;
+  font-size: clamp(12px, 3vw, 14px);
+  font-weight: 800;
+  line-height: 150%;
+  color: hsl(0, 0%, 7%);
+}
+body .card-component .content .publishDate {
+  font-size: clamp(12px, 3vw, 14px);
+  line-height: 150%;
+  color: hsl(0, 0%, 7%);
+  font-weight: 500;
+}
+body .card-component .content .title {
+  font-size: clamp(22px, 3vw, 24px);
+  line-height: 150%;
+  color: hsl(0, 0%, 7%);
+  font-weight: bolder;
+}
+body .card-component .content .title:hover {
+  transition: 0.3s;
+  color: hsl(47, 88%, 63%);
+}
+body .card-component .content .description {
+  color: hsl(0, 0%, 50%);
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 150%;
+  font-weight: 500;
+}
+body .card-component .author {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+body .card-component .author img {
+  height: 100%;
+}
+body .card-component .author .authorName {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: clamp(12px, 3vw, 14px);
+}
+
+/*# sourceMappingURL=style.css.map */
